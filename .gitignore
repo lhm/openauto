@@ -1,0 +1,5 @@
+venv
+.vagrant
+*.log
+output
+tmp
