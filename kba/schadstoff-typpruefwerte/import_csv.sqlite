@@ -1,0 +1,4 @@
+.separator ','
+.import data/full.csv type_test_values
+
+delete from type_test_values where "line_number" = 'line_number'

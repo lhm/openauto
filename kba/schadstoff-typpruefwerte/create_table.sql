@@ -1,0 +1,20 @@
+CREATE TABLE type_test_values (
+        "line_number" INTEGER,
+        "1" VARCHAR,
+        "2" VARCHAR,
+        "3" VARCHAR,
+        "4" VARCHAR,
+        "5" VARCHAR,
+        "6" VARCHAR,
+        "7" INTEGER,
+        "8" VARCHAR,
+        "8.1" INTEGER,
+        "8.2" INTEGER,
+        "8.3" INTEGER,
+        "8.4" INTEGER,
+        "8.5" FLOAT,
+        "8.6" FLOAT,
+        "8.7" FLOAT,
+        "8.8" FLOAT,
+        "9" VARCHAR
+);
