@@ -1,6 +1,3 @@
-venv
-.vagrant
+# .DS_Store
 *.log
-output
-tmp
 *.csv
