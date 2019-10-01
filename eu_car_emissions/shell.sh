@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-docker run -it --volume="`pwd`:/app" --workdir '/app' amancevice/pandas python -i -c 'import numpy as np; import pandas as pd'
+docker run -it --volume="`pwd`:/app" --workdir '/app' daskdev/dask:2.3.0 python -ic 'from transform import *'
