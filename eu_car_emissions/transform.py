@@ -30,8 +30,16 @@ def transform(df):
 
 
 if __name__ == "__main__":
-    rows = 10000
-    print(f'Loading {rows} rows')
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-n', '--rows', type=int, default=10000,
+        help='number of rows to process (default: %(default)s)')
+    parser.add_argument('-a', '--all', dest='rows',action='store_const',
+        const=None, help='process full file')
+    args = parser.parse_args()
+    rows = args.rows
+
+    print(('Loading {} rows ').format((rows if rows else 'all')))
     df = load_data(nrows=rows)
     print("Grouping similar entries...")
     df = transform(df)
